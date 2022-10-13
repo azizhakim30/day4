@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/asset/style.css" />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <!-- Start Navbar -->
+
+    <nav>
+      <div>
+        <ul class="nav-left">
+          <img class="logo" src="/asset/image/logo.png" alt="Logo" />
+          <a href="index.html" class="home">Home</a>
+          <a href="myProject.html">My Project</a>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a href="contact.html">Contact Me</a>
+      </div>
+    </nav>
+
+    <!-- End Navbar -->
+
+    <!-- Start Contact Me -->
+
+    <form action="#">
+      <h1>GET IN TOUCH</h1>
+      <div>
+        <label for="inputName">Name</label>
+        <input type="text" id="inputName" />
+      </div>
+      <div>
+        <label for="inputEmail">Email</label>
+        <input type="email" id="inputEmail" />
+      </div>
+      <div>
+        <label for="inputPhone">Phone Number</label>
+        <input type="number" id="inputPhone" />
+      </div>
+      <div>
+        <label for="inputSubject">Subject</label>
+        <select id="inputSubject">
+          <option value="" hidden></option>
+          <option value="frondend">FrondEnd</option>
+          <option value="backend">BackEnd</option>
+          <option value="fullstack">FullStack</option>
+        </select>
+      </div>
+      <div>
+        <label for="inputMessage">Your Message</label>
+        <textarea id="inputMessage" cols="30" rows="10"></textarea>
+      </div>
+      <button class="submit" type="submit" onclick="submitContact()">
+        submit
+      </button>
+    </form>
+
+    <!-- End Contact Me -->
+  </body>
+  <script src="/script.js"></script>
+</html>

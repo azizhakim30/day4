@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/asset/myproject.css" />
+    <link rel="stylesheet" href="/asset/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <script src="/myproject.js"></script>
+    <title>MyProject</title>
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav>
+      <div>
+        <ul class="nav-left">
+          <img class="logo" src="/asset/image/logo.png" alt="Logo" />
+          <a href="index.html" class="home">Home</a>
+          <a href="myProject.html">My Project</a>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a href="contact.html">Contact Me</a>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Form -->
+    <h1>ADD MY PROJECT</h1>
+    <div class="container">
+      <div class="formMyproject">
+        <form onsubmit="addProject(event)">
+          <div>
+            <label for="inputName">Project Name</label>
+            <input type="text" id="inputName" />
+          </div>
+
+          <div class="date">
+            <div class="dateStart">
+              <label for="inputStartDate">Start Date</label>
+              <input type="date" id="inputStartDate" />
+            </div>
+            <div class="dateEnd">
+              <label for="inputEndDate">End Date</label>
+              <input type="date" id="inputEndDate" />
+            </div>
+          </div>
+
+          <div>
+            <label for="inputDesc">Description</label>
+            <textarea id="inputDesc" cols="30" rows="10"></textarea>
+          </div>
+
+          <div class="technologies">
+            <label>Technologies</label>
+            <div class="checkbox">
+              <div class="checkboxLeft">
+                <div>
+                  <label for="checkboxNodejs">
+                    <input
+                      type="checkbox"
+                      id="checkboxNodejs"
+                      name="checkboxNodejs"
+                    />
+                    Node Js</label
+                  >
+                </div>
+
+                <div>
+                  <label for="checkboxReactJs">
+                    <input
+                      type="checkbox"
+                      id="checkboxReactJs"
+                      name="checkboxReactJs"
+                    />
+                    React Js</label
+                  >
+                </div>
+              </div>
+              <div class="checkboxRight">
+                <div>
+                  <label for="checkboxJavaScript">
+                    <input
+                      type="checkbox"
+                      id="checkboxJavaScript"
+                      name="checkboxJavaScript"
+                    />
+                    JavaScript</label
+                  >
+                </div>
+
+                <div>
+                  <label for="checkboxVueJs">
+                    <input
+                      type="checkbox"
+                      id="checkboxVueJs"
+                      name="checkboxVueJs"
+                    />
+                    Vue Js</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <label>Upload Image</label>
+            <div class="labelImage">
+              <label for="inputImage"
+                ><div class="chooseImage">Choose</div>
+                <div class="attach"><i class="fa-solid fa-paperclip"></i></div>
+                <input type="file" id="inputImage" hidden />
+              </label>
+            </div>
+          </div>
+          <button class="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="project">
+      <h1 class="title">MY PROJECT</h1>
+      <div class="cardProjects" id="cardProjects">
+        <div class="card">
+          <div class="img">
+            <img src="/asset/image/webApp.jpg" />
+          </div>
+          <div class="projectTitle">
+            <a href="detailProject.html">DumbWays Web App</a>
+            <br /><small>Durasi: 3 Bulan</small>
+          </div>
+          <div class="projectContent">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+            saepe molestiae inventore ratione commodi animi sit, optio numquam,
+            nulla dolorem eveniet! Nam optio ad magnam, illum rem suscipit
+            facere.
+          </div>
+          <div class="icons">
+            <i class="fa-brands fa-google-play"></i>
+            <i class="fa-brands fa-android"></i>
+            <i class="fa-brands fa-java"></i>
+          </div>
+          <div class="mod">
+            <button>Edit</button>
+            <button>Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

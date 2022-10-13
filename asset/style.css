@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: #e2e6ea;
+}
+
+/* Start Navbar */
+nav {
+  display: flex;
+  height: 10vh;
+  background-color: #f4f3f3;
+}
+
+nav div {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+nav div a {
+  font-size: 20px;
+}
+
+.nav-left {
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.logo {
+  width: 70px;
+}
+
+.home {
+  font-weight: bold;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: end;
+  margin-right: 100px;
+  align-items: center;
+}
+
+.nav-right a {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 8px 18px;
+  font-size: 15px;
+  font-weight: 550;
+}
+/* End Navbar */
+
+/* First Card */
+.container {
+  display: flex;
+  width: 1100px;
+  margin: 50px auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.29);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 20px;
+  padding-top: 50px;
+  margin: 30px 0 30px 30px;
+  width: 700px;
+}
+
+.hello {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.desc {
+  margin-bottom: 50px;
+  font-size: 15px;
+}
+
+button {
+  background-color: black;
+  border-radius: 25px;
+  cursor: pointer;
+  color: white;
+  font-size: 17px;
+  padding: 5px 30px;
+  text-decoration: none;
+  margin-right: 30px;
+  margin-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.sosmed {
+  display: flex;
+  align-items: right;
+  font-size: 50px;
+  gap: 30px;
+}
+
+.profil {
+  border-radius: 8px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 50px 50px 30px;
+  box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.29);
+}
+
+img {
+  width: 300px;
+  border-radius: 8px 8px 0 0;
+}
+
+.caption {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+/* End Card */
+
+/* Start Contact Page */
+form {
+  margin: 70px auto;
+  width: 500px;
+}
+
+form h1 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  margin-bottom: 10px;
+}
+
+Label {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+input,
+select,
+textarea {
+  margin-top: 5px;
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  resize: none;
+  font-size: 15px;
+}
+
+option {
+  font-size: 15px;
+}
+
+.submit {
+  margin-top: 20px;
+  margin-left: 75%;
+  cursor: pointer;
+}
+/* End Contact Page */
